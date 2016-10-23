@@ -12,7 +12,71 @@
 		C96A80DB1DBC85BC00349283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96A80D91DBC85BC00349283 /* Main.storyboard */; };
 		C96A80DD1DBC85BC00349283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96A80DC1DBC85BC00349283 /* Assets.xcassets */; };
 		C96A80E01DBC85BC00349283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96A80DE1DBC85BC00349283 /* LaunchScreen.storyboard */; };
+		C96A80EF1DBC863300349283 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A80EE1DBC863300349283 /* IntentHandler.swift */; };
+		C96A80F81DBC863400349283 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96A80F71DBC863400349283 /* IntentsUI.framework */; };
+		C96A80FB1DBC863400349283 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A80FA1DBC863400349283 /* IntentViewController.swift */; };
+		C96A80FE1DBC863400349283 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96A80FC1DBC863400349283 /* MainInterface.storyboard */; };
+		C96A81021DBC863400349283 /* FlashExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C96A80F51DBC863400349283 /* FlashExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C96A81051DBC863400349283 /* FlashExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C96A80EC1DBC863300349283 /* FlashExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C96A81161DBC869500349283 /* FlashCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C96A81141DBC869500349283 /* FlashCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C96A81191DBC869500349283 /* FlashCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96A81121DBC869500349283 /* FlashCore.framework */; };
+		C96A811A1DBC869500349283 /* FlashCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96A81121DBC869500349283 /* FlashCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C96A81221DBC86EA00349283 /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A81211DBC86EA00349283 /* WorkoutDetails.swift */; };
+		C96A81231DBC86EA00349283 /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A81211DBC86EA00349283 /* WorkoutDetails.swift */; };
+		C96A81241DBC86EA00349283 /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A81211DBC86EA00349283 /* WorkoutDetails.swift */; };
+		C96A81251DBC86EA00349283 /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A81211DBC86EA00349283 /* WorkoutDetails.swift */; };
+		C96A812C1DBCA43000349283 /* IntentEndWorkoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A812B1DBCA43000349283 /* IntentEndWorkoutHandler.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96A81001DBC863400349283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96A80CA1DBC85BC00349283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96A80F41DBC863400349283;
+			remoteInfo = FlashExtensionUI;
+		};
+		C96A81031DBC863400349283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96A80CA1DBC85BC00349283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96A80EB1DBC863300349283;
+			remoteInfo = FlashExtension;
+		};
+		C96A81171DBC869500349283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96A80CA1DBC85BC00349283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96A81111DBC869500349283;
+			remoteInfo = FlashCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C96A810C1DBC863400349283 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C96A81021DBC863400349283 /* FlashExtensionUI.appex in Embed App Extensions */,
+				C96A81051DBC863400349283 /* FlashExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A811E1DBC869500349283 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C96A811A1DBC869500349283 /* FlashCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C96A80D21DBC85BC00349283 /* Flash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +86,47 @@
 		C96A80DC1DBC85BC00349283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96A80DF1DBC85BC00349283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96A80E11DBC85BC00349283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A80E71DBC85D200349283 /* Flash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flash.entitlements; sourceTree = "<group>"; };
+		C96A80EC1DBC863300349283 /* FlashExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlashExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A80EE1DBC863300349283 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C96A80F01DBC863300349283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A80F51DBC863400349283 /* FlashExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlashExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A80F71DBC863400349283 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C96A80FA1DBC863400349283 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		C96A80FD1DBC863400349283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C96A80FF1DBC863400349283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A81121DBC869500349283 /* FlashCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlashCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A81141DBC869500349283 /* FlashCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashCore.h; sourceTree = "<group>"; };
+		C96A81151DBC869500349283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A81211DBC86EA00349283 /* WorkoutDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
+		C96A812B1DBCA43000349283 /* IntentEndWorkoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentEndWorkoutHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C96A80CF1DBC85BC00349283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A81191DBC869500349283 /* FlashCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A80E91DBC863300349283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A80F21DBC863400349283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A80F81DBC863400349283 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A810E1DBC869500349283 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				C96A80D41DBC85BC00349283 /* Flash */,
+				C96A80ED1DBC863300349283 /* FlashExtension */,
+				C96A80F91DBC863400349283 /* FlashExtensionUI */,
+				C96A81131DBC869500349283 /* FlashCore */,
+				C96A80F61DBC863400349283 /* Frameworks */,
 				C96A80D31DBC85BC00349283 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				C96A80D21DBC85BC00349283 /* Flash.app */,
+				C96A80EC1DBC863300349283 /* FlashExtension.appex */,
+				C96A80F51DBC863400349283 /* FlashExtensionUI.appex */,
+				C96A81121DBC869500349283 /* FlashCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +162,7 @@
 		C96A80D41DBC85BC00349283 /* Flash */ = {
 			isa = PBXGroup;
 			children = (
+				C96A80E71DBC85D200349283 /* Flash.entitlements */,
 				C96A80D51DBC85BC00349283 /* AppDelegate.swift */,
 				C96A80D71DBC85BC00349283 /* ViewController.swift */,
 				C96A80D91DBC85BC00349283 /* Main.storyboard */,
@@ -64,7 +173,56 @@
 			path = Flash;
 			sourceTree = "<group>";
 		};
+		C96A80ED1DBC863300349283 /* FlashExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C96A80EE1DBC863300349283 /* IntentHandler.swift */,
+				C96A80F01DBC863300349283 /* Info.plist */,
+				C96A812B1DBCA43000349283 /* IntentEndWorkoutHandler.swift */,
+			);
+			path = FlashExtension;
+			sourceTree = "<group>";
+		};
+		C96A80F61DBC863400349283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96A80F71DBC863400349283 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96A80F91DBC863400349283 /* FlashExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				C96A80FA1DBC863400349283 /* IntentViewController.swift */,
+				C96A80FC1DBC863400349283 /* MainInterface.storyboard */,
+				C96A80FF1DBC863400349283 /* Info.plist */,
+			);
+			path = FlashExtensionUI;
+			sourceTree = "<group>";
+		};
+		C96A81131DBC869500349283 /* FlashCore */ = {
+			isa = PBXGroup;
+			children = (
+				C96A81141DBC869500349283 /* FlashCore.h */,
+				C96A81151DBC869500349283 /* Info.plist */,
+				C96A81211DBC86EA00349283 /* WorkoutDetails.swift */,
+			);
+			path = FlashCore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C96A810F1DBC869500349283 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A81161DBC869500349283 /* FlashCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C96A80D11DBC85BC00349283 /* Flash */ = {
@@ -74,15 +232,72 @@
 				C96A80CE1DBC85BC00349283 /* Sources */,
 				C96A80CF1DBC85BC00349283 /* Frameworks */,
 				C96A80D01DBC85BC00349283 /* Resources */,
+				C96A810C1DBC863400349283 /* Embed App Extensions */,
+				C96A811E1DBC869500349283 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C96A81011DBC863400349283 /* PBXTargetDependency */,
+				C96A81041DBC863400349283 /* PBXTargetDependency */,
+				C96A81181DBC869500349283 /* PBXTargetDependency */,
 			);
 			name = Flash;
 			productName = Flash;
 			productReference = C96A80D21DBC85BC00349283 /* Flash.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C96A80EB1DBC863300349283 /* FlashExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A81091DBC863400349283 /* Build configuration list for PBXNativeTarget "FlashExtension" */;
+			buildPhases = (
+				C96A80E81DBC863300349283 /* Sources */,
+				C96A80E91DBC863300349283 /* Frameworks */,
+				C96A80EA1DBC863300349283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashExtension;
+			productName = FlashExtension;
+			productReference = C96A80EC1DBC863300349283 /* FlashExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C96A80F41DBC863400349283 /* FlashExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A81061DBC863400349283 /* Build configuration list for PBXNativeTarget "FlashExtensionUI" */;
+			buildPhases = (
+				C96A80F11DBC863400349283 /* Sources */,
+				C96A80F21DBC863400349283 /* Frameworks */,
+				C96A80F31DBC863400349283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashExtensionUI;
+			productName = FlashExtensionUI;
+			productReference = C96A80F51DBC863400349283 /* FlashExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C96A81111DBC869500349283 /* FlashCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A811B1DBC869500349283 /* Build configuration list for PBXNativeTarget "FlashCore" */;
+			buildPhases = (
+				C96A810D1DBC869500349283 /* Sources */,
+				C96A810E1DBC869500349283 /* Frameworks */,
+				C96A810F1DBC869500349283 /* Headers */,
+				C96A81101DBC869500349283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashCore;
+			productName = FlashCore;
+			productReference = C96A81121DBC869500349283 /* FlashCore.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +313,27 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TFVPAWAQ8A;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					C96A80EB1DBC863300349283 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TFVPAWAQ8A;
+						ProvisioningStyle = Automatic;
+					};
+					C96A80F41DBC863400349283 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TFVPAWAQ8A;
+						ProvisioningStyle = Automatic;
+					};
+					C96A81111DBC869500349283 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TFVPAWAQ8A;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -115,6 +351,9 @@
 			projectRoot = "";
 			targets = (
 				C96A80D11DBC85BC00349283 /* Flash */,
+				C96A80EB1DBC863300349283 /* FlashExtension */,
+				C96A80F41DBC863400349283 /* FlashExtensionUI */,
+				C96A81111DBC869500349283 /* FlashCore */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +369,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C96A80EA1DBC863300349283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A80F31DBC863400349283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A80FE1DBC863400349283 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A81101DBC869500349283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +400,56 @@
 			files = (
 				C96A80D81DBC85BC00349283 /* ViewController.swift in Sources */,
 				C96A80D61DBC85BC00349283 /* AppDelegate.swift in Sources */,
+				C96A81221DBC86EA00349283 /* WorkoutDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A80E81DBC863300349283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A81231DBC86EA00349283 /* WorkoutDetails.swift in Sources */,
+				C96A812C1DBCA43000349283 /* IntentEndWorkoutHandler.swift in Sources */,
+				C96A80EF1DBC863300349283 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A80F11DBC863400349283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A81241DBC86EA00349283 /* WorkoutDetails.swift in Sources */,
+				C96A80FB1DBC863400349283 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A810D1DBC869500349283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A81251DBC86EA00349283 /* WorkoutDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96A81011DBC863400349283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96A80F41DBC863400349283 /* FlashExtensionUI */;
+			targetProxy = C96A81001DBC863400349283 /* PBXContainerItemProxy */;
+		};
+		C96A81041DBC863400349283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96A80EB1DBC863300349283 /* FlashExtension */;
+			targetProxy = C96A81031DBC863400349283 /* PBXContainerItemProxy */;
+		};
+		C96A81181DBC869500349283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96A81111DBC869500349283 /* FlashCore */;
+			targetProxy = C96A81171DBC869500349283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C96A80D91DBC85BC00349283 /* Main.storyboard */ = {
@@ -159,6 +466,14 @@
 				C96A80DF1DBC85BC00349283 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C96A80FC1DBC863400349283 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96A80FD1DBC863400349283 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,7 +575,9 @@
 		C96A80E51DBC85BC00349283 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Flash/Flash.entitlements;
 				DEVELOPMENT_TEAM = TFVPAWAQ8A;
 				INFOPLIST_FILE = Flash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -273,13 +590,120 @@
 		C96A80E61DBC85BC00349283 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Flash/Flash.entitlements;
 				DEVELOPMENT_TEAM = TFVPAWAQ8A;
 				INFOPLIST_FILE = Flash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.Flash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C96A81071DBC863400349283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				INFOPLIST_FILE = FlashExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.Flash.FlashExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C96A81081DBC863400349283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				INFOPLIST_FILE = FlashExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.Flash.FlashExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C96A810A1DBC863400349283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				INFOPLIST_FILE = FlashExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.Flash.FlashExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C96A810B1DBC863400349283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				INFOPLIST_FILE = FlashExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.Flash.FlashExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C96A811C1DBC869500349283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlashCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.FlashCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C96A811D1DBC869500349283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TFVPAWAQ8A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlashCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftnextstep.udemy.FlashCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -302,6 +726,34 @@
 				C96A80E61DBC85BC00349283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A81061DBC863400349283 /* Build configuration list for PBXNativeTarget "FlashExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A81071DBC863400349283 /* Debug */,
+				C96A81081DBC863400349283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A81091DBC863400349283 /* Build configuration list for PBXNativeTarget "FlashExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A810A1DBC863400349283 /* Debug */,
+				C96A810B1DBC863400349283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A811B1DBC869500349283 /* Build configuration list for PBXNativeTarget "FlashCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A811C1DBC869500349283 /* Debug */,
+				C96A811D1DBC869500349283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

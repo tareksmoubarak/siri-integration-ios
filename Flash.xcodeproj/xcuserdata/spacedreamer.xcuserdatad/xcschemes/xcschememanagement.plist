@@ -9,10 +9,40 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FlashCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>FlashExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FlashExtensionUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C96A80D11DBC85BC00349283</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C96A80EB1DBC863300349283</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C96A80F41DBC863400349283</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C96A81111DBC869500349283</key>
 		<dict>
 			<key>primary</key>
 			<true/>
